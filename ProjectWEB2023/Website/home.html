@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="home.css" /> <!-- Interence from another class--> 
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+
+<!--Start-->
+<body>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="Welcome Title">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome Title</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://kit.fontawesome.com/66aa7c98b3.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:400,700,300|Quattrocento" rel="stylesheet">
+    <link rel="shortcut icon" href="./img/fbavatar_1630400663387_6838396024049256103.png" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+   <meta property="og:site_name" content="">
+   <meta property="og:type" content="website">
+   <meta property="og:title" content="Welcome Title">
+   <meta property="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Welcome Title">
+  <meta property="og:locale" content="en">
+  </head>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <body>
+<!--This is header: user able to find resources and contact with product they are looking for will be provided easy access.-->
+    <header class="header">
+      <nav class="navbar">
+        <div class="navbar-container container">
+          <div>
+            <button type="submit" class="homeclick"><a href="home.html" style="text-decoration: none; color: black;">Welcome Title</a></button> <!--Resource:https://stackoverflow.com/questions/10312857/blue-and-purple-default-links-how-to-remove-->
+          </div>
+          <ul class="menu-items">
+            <li><a href="about.html">About</a></li>
+            <li><a href="product.html">Products</a></li>
+            <li><a href="#contact-me">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="home-content" id="home-page">
+ <!--End of Header-->  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!--This is the logo for center of first link to the page: Center Page.-->
+<div class="name">
+          <img src="images/TLOGO.svg.png" width="100" height="100" style="margin-top: 8.2rem;" alt="logodesignsvg" title="svg"/> <!--resource: https://www.youtube.com/watch?v=P64pP3qHTNA-->
+    <div>   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--Greeting-->
+      <label id="lblGreetings"></label>
+      <script> //Language: AngularJS 
+        var myDate = new Date(); //-New variables
+        var hrs = myDate.getHours();
+        var greet;
+
+        if (hrs < 12)
+            greet = 'Good Morning';
+        else if (hrs >= 12 && hrs <= 17)
+            greet = 'Good Afternoon';
+        else if (hrs >= 17 && hrs <= 24)
+            greet = 'Good Evening';
+        document.getElementById('lblGreetings').innerHTML = //sending message out.
+            '<b>' + greet+"!";
+    </script> 
+<!--END of Greeting-->
+
+      <!-- <p>Log in with account to continue</p>   -->
+      <p>Let's learn, click to begin.</p>
+
+<!--LOG IN / SIGN UP BUTTON-->
+      <button type="button" class="loginbutton"><a href="Login.html">Join us</a></button>
+    </div> 
+      </div>
+    </header>
+<!--End of center Page-->
+
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+       
+ <!--Contact Page-->  
+    <div class="contact" id="contact-me">
+      <div class="container">
+        <div class="contact-content">
+          <div class="social-menu">
+            <ul>
+              <li><a href="https://www.linkedin.com/" target="blank"><i class="fab fa-linkedin-in"></i></a></li>
+              <li><a href="https://www.youtube.com//" target="blank"><i class="fab fa-youtube"></i></a></li>
+              <li><a href="https://twitter.com/" target="blank"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="https://facebook.com/" target="blank"><i class="fab fa-facebook"></i></i></a></li>
+              <li><a href="https://www.instagram.com/" target="blank"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+        </div>
+
+          <!--footer-->    
+          <div>
+            <button type="submit" class="termofusebutton"><a href="TermofUse.html">Join us</a></button>
+            <button type="submit" class="privacypolicybutton"><a href="PrivacyPolicy.html">Privacy Policy</a></button>        
+
+          <p class="Copyright">Copyright &copy; 2023 WelcomeTitle.com. All rights reserved.</p>
+        </div>
+      </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(window).scroll(function () {
+          // checks if window is scrolled more than 500px, adds/removes solid class
+          if ($(this).scrollTop() > 550) {
+            $('.navbar').addClass('solid');
+            $('.back-to-top').addClass('visible');
+          } else {
+            $('.navbar').removeClass('solid');
+            $('.back-to-top').removeClass('visible');
+          }
+  
+        });
+      });
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Add smooth scrolling to all links
+        $("a").on('click', function (event) {
+  
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+  
+            // Store hash
+            var hash = this.hash;
+  
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 800, function () {
+  
+              // Add hash (#) to URL when done scrolling (default click behavior)
+              window.location.hash = hash;
+            });
+          } // End if
+        });
+      });
+    </script>
+  </body>
+  
+  </html>
+  
+</body>
+<!--End-->
+</html>

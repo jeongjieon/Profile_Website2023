@@ -1,0 +1,523 @@
+/*This is style for the index.html*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  background-color: #c3d7d4;
+  height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+}
+
+/* ////........Navbar.......//// */
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 500;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+}
+
+.menu-items {
+  display: flex;
+}
+
+.menu-items li {
+  list-style: none;
+  padding: 1rem;
+}
+
+.menu-items a {
+  text-decoration: none;
+  color: #56564b;
+  font-size: 1.2rem;
+  padding: 0.3rem;
+}
+
+.menu-items a:hover {
+  border-bottom: 2px solid #30302c;
+}
+
+.navbar .logo {
+  order: 1;
+  font-size: 2rem;
+}
+
+/* ////........Home Content........//// */
+
+.home-content .name {
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #07374a;
+  width: 100%;
+  text-align: center;
+}
+.home-content .name h1 { /*Welcome Title*/
+    font-size: 10px;
+    text-align: center;
+}
+
+.homeclick {
+  background-color: transparent;
+  border-color: transparent;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-family: 'Gambetta', serif;
+  transition: 700ms ease;
+  font-variation-settings: "wght" 711;
+  margin-bottom: 0.8rem;
+  color: PaleGoldenRod;
+  outline: none;
+  text-decoration: none;
+}
+
+.homeclick:hover {
+  letter-spacing: 1px;
+}
+
+.home-content .name p { /*"Log in with your OPENAL account to continue*/
+  color: #35352e;
+  font-size: 17px;
+  margin-bottom: 2rem;
+}
+
+img {
+  pointer-events: none;
+}
+/* START of LOGIN */
+.loginbutton {
+  background-color: #7f9586;
+  border-radius: 4px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Farfetch Basis","Helvetica Neue",Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 25;
+  line-height: 1.5;
+  margin: 0;
+  max-width: none;
+  min-height: -5px;
+  min-width: -5px;
+  outline: none;
+  overflow: hidden;
+  padding: 9px 10px 8px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 14%;
+  }
+  .loginbutton:hover,
+  .loginbutton:focus {
+    opacity: .75;
+  }
+/* ///END of LOG IN BUTTON/// */
+  
+
+/* SignUp button
+  .signupbutton {
+    background-color: #7f9586;
+    border-radius: 4px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Farfetch Basis","Helvetica Neue",Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 25;
+    line-height: 1.5;
+    margin: 0;
+    max-width: none;
+    min-height: -5px;
+    min-width: -5px;
+    outline: none;
+    overflow: hidden;
+    padding: 9px 10px 8px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 14%;
+    }
+    .signupbutton:hover,
+    .signupbutton:focus {
+      opacity: .75;
+    }
+ /* END OF SignUp button */ 
+
+
+ .termofusebutton {
+  background-color: transparent;
+  border-style: none;
+  border-right: 1px solid;  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Farfetch Basis","Helvetica Neue",Arial,sans-serif;
+  font-size: 9px;
+  line-height: 1.5;
+  margin: 0;
+  max-width: none;
+  min-height: 5px;
+  min-width: 5px;
+  outline: none;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  }
+  .termofusebutton:hover,
+  .termofusebutton:focus {
+    opacity: .75;
+  }
+
+/* ---------------------------------------------------- */
+
+
+ .privacypolicybutton {
+
+  background-color: transparent;
+  border-style: none;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Farfetch Basis","Helvetica Neue",Arial,sans-serif;
+  font-size: 9px;
+  line-height: 1.5;
+  margin-top: 80px;
+  margin-bottom: 3px;
+  max-width: none;
+  min-height: 5px;
+  min-width: 5px;
+  outline: none;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  }
+  .privacypolicybutton:hover,
+  .privacypolicybutton:focus {
+    opacity: .75;
+  }
+/* ////......Contact......///// */
+
+.contact {
+  background: #07374a;
+  position: relative;
+  height: 92vh;
+}
+
+.contact-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.contact-content .Copyright {
+  color: #f0f0e6;
+  padding-bottom: 0.2rem;
+  font-size: 12px; 
+  font-style: initial; 
+}
+
+.contact-content a {
+  text-decoration: none;
+  color: #25b79f;
+  padding: 0.5rem;
+  transition: 0.3s ease-in-out;
+}
+
+.contact-content a:hover{
+  color: #f0f0e6;
+}
+
+/*---------Social Meia Contact-----------*/
+.social-menu ul{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding-bottom: 62px; /*Gives space between term of use and the logo gap*/
+  margin: 0;
+  transform: translate(-50%, -50%);
+  display: flex;
+}
+
+.social-menu ul li{ /*Width size for spacing each social media*/
+  list-style: none;
+  margin: 0 10px;
+}
+
+.social-menu ul li .fab{ /*when user touches the logo, it will notify user that you are in THIS buttton, Its like double checking before user exdently clicks,*/
+  font-size: 24px; /*Size of logo*/
+  line-height: 48px;
+  transition: .3s;
+  color: #000;
+}
+
+.social-menu ul li .fab:hover{ /*Background cover for the social meida*/
+  color: #fff;
+}
+
+.social-menu ul li a{
+  position: relative;
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #266680; /*background border cover*/
+  text-align: center;
+  transition: .6s;
+  box-shadow: 0 5px 4px rgba(0,0,0,.5);
+}
+
+
+.social-menu ul li a:hover{ /*This is parent for the background transdition: "Binary Tree"*/
+  transform: translate(0, -10%);
+}
+.social-menu ul li:nth-child(1) a:hover{ /*there are 5 child*/
+  background-color: #0072b1; /*LinkIn*/
+}
+.social-menu ul li:nth-child(2) a:hover{
+  background-color: #c4302b; /*youtube*/
+}
+.social-menu ul li:nth-child(3) a:hover{
+  background-color: #00acee; /*Twitter*/
+}
+.social-menu ul li:nth-child(4) a:hover{
+  background-color: #3b5998; /*facebook*/
+}
+.social-menu ul li:nth-child(5) a:hover{ /*RESOUCE:https://stackoverflow.com/questions/37751375/instagram-new-logo-css-background*/
+  background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%); /*Instagram*/
+}
+/*--------- END of Social Meia Contact-----------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ////......Media query......//// */
+
+@media (max-width: 500px) {
+  html {
+    font-size: 60%;
+  }
+
+  .about-content .left-content {
+    flex-basis: 100%;
+    text-align: center;
+  }
+
+  .about-content .right-content {
+    flex-basis: 100%;
+  }
+
+  .skills {
+    width: 100%;
+  }
+
+  .skills-bar .bar .progress-line {
+    width: 100%;
+  }
+
+  .work-arrow {
+    display: none;
+  }
+
+  .right-content h1 {
+    margin-top: 3.2rem;
+  }
+
+  .proj-1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .proj-1 img {
+    height: 230px;
+    width: 290px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .proj-2{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .proj-2 img {
+    height: 250px;
+    width: 290px;
+    margin-bottom: 0.5rem;
+  }
+
+  .work-arrow-2 a {
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: #25b79f;
+    display: block;
+    text-align: center;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 768px) {
+  html {
+    font-size: 65%;
+  }
+
+  .about-content .left-content {
+    flex-basis: 100%;
+    text-align: center;
+  }
+
+  .about-content .right-content {
+    flex-basis: 100%;
+  }
+
+  .skills {
+    width: 100%;
+  }
+
+  .skills-bar .bar .progress-line {
+    width: 100%;
+  }
+
+  .work-arrow {
+    display: none;
+  }
+
+  .right-content h1 {
+    margin-top: 3.2rem;
+  }
+
+  .proj-1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .proj-1 img {
+    height: 240px;
+    width: 290px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .proj-2{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .proj-2 img {
+    height: 240px;
+    width: 290px;
+    margin-bottom: 0.5rem;
+  }
+
+  .work-arrow-2 a {
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: #25b79f;
+    display: block;
+    text-align: center;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  html {
+    font-size: 70%;
+  }
+
+  .about-content .left-content {
+    flex-basis: 100%;
+    text-align: center;
+  }
+
+  .about-content .right-content {
+    flex-basis: 100%;
+  }
+
+  .skills {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .work-arrow {
+    display: none;
+  }
+
+  .left-content h1 {
+    margin-top: 3.2rem;
+    text-align: center;
+  }
+
+  .right-content h1 {
+    margin-top: 3.2rem;
+    text-align: center;
+  }
+
+  .work-arrow-2 a {
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: #25b79f;
+    display: block;
+    text-align: center;
+  }
+
+}
+
+@media (orientation: landscape) and (max-height: 500px) {
+  .header {
+    height: 90vmax;
+  }
+}
